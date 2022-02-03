@@ -57,11 +57,7 @@
             </form>
         </div>
     </div>
-    <div class="row mt-3">
-        <div class="col">
-            <div *ngFor="let empleado of empleados; let i=index;">
-                {{i+1}}. {{empleado.nombre}} {{empleado.apellido}} {{empleado.cargo}} {{empleado.salario}}
-            </div>
-        </div>
-    </div>
+
+    <app-empleado-hijo *ngFor="let empleado of empleados; let i=index;" [empleadoDeLista]="empleado" [indice]="i"></app-empleado-hijo>
+
 </div>
