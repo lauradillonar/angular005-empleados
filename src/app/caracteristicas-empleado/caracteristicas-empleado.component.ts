@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-caracteristicas-empleado',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./caracteristicas-empleado.component.css']
 })
 export class CaracteristicasEmpleadoComponent implements OnInit {
+  @Output() caracteristicasEmpleado = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  agregaCaracteristicas(value: string){
+    this.caracteristicasEmpleado.emit(value);
   }
 
 }
