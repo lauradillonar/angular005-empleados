@@ -19,7 +19,7 @@ export class AppComponent {
   cuadroApellido:string="";
   cuadroCargo:string="";
   cuadroSalario:number=0
-  
+
   constructor(private miServicio:ServicioEmpleadosService){
 
   }

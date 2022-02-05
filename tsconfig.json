@@ -2,7 +2,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+<<<<<<< HEAD
     "strictPropertyInitialization": false,
+=======
+>>>>>>> 871cabb (Practica de directivas, binding, interpolacion con Angular - Curso PildorasInformaticas)
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
