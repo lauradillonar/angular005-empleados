@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   }
   agregarEmpleado(){
     let miEmpleado=new Empleado(this.cuadroNombre, this.cuadroApellido, this.cuadroCargo, this.cuadroSalario);
-    this.miServicio.muestraMensaje("Nombre del empleado: "+ miEmpleado.nombre);
+    //this.miServicio.muestraMensaje("Nombre del empleado: "+ miEmpleado.nombre);
     //push miEmpleado
     this.empleadosService.agregarEmpleadoServicio(miEmpleado);
   }
