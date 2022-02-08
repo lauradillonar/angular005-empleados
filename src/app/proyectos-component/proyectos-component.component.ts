@@ -14,7 +14,7 @@ export class ProyectosComponentComponent implements OnInit {
   cuadroNombre:string="";
   cuadroApellido:string="";
   cuadroCargo:string="";
-  cuadroSalario:number=0
+  cuadroSalario:number=0;
 
   constructor(private router:Router, private miServicio:ServicioEmpleadosService, private empleadosService: EmpleadosService) { }
 

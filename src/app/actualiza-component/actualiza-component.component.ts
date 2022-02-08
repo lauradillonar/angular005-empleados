@@ -15,7 +15,7 @@ export class ActualizaComponentComponent implements OnInit {
   cuadroNombre:string="";
   cuadroApellido:string="";
   cuadroCargo:string="";
-  cuadroSalario:number=0
+  cuadroSalario:number=0;
   indice:number;
 
   constructor(private router:Router,private route:ActivatedRoute, private miServicio:ServicioEmpleadosService, private empleadosService: EmpleadosService) { }
@@ -39,6 +39,11 @@ export class ActualizaComponentComponent implements OnInit {
     //this.miServicio.muestraMensaje("Nombre del empleado: "+ miEmpleado.nombre);
     //push miEmpleado
     this.empleadosService.actualizarEmpleado(this.indice, miEmpleado);
+    this.router.navigate(['']);
+  }
+
+  eliminaEmpleado(){
+    this.empleadosService.eliminarEmpleado(this.indice);
     this.router.navigate(['']);
   }
 
