@@ -18,7 +18,7 @@ export class HomeComponentComponent implements OnInit {
   cuadroSalario:number=0
 
 
-  constructor(private miServicio:ServicioEmpleadosService, private empleadosService: EmpleadosService) { 
+  constructor(private miServicio:ServicioEmpleadosService, private empleadosService: EmpleadosService) {
     //this.empleados=this.empleadosService.empleados;
   }
 
