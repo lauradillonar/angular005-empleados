@@ -46,5 +46,4 @@ export class ActualizaComponentComponent implements OnInit {
     this.empleadosService.eliminarEmpleado(this.indice);
     this.router.navigate(['']);
   }
-
 }
