@@ -4,7 +4,7 @@
   "compilerOptions": {
     "strictPropertyInitialization": false,
     "baseUrl": "./",
-    "outDir": "./dist",
+    "outDir": "./dist/angular005-empleados",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
